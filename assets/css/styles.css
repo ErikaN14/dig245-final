@@ -1,2 +1,19 @@
-
 /* css */
+
+body{
+    background-color: #A5BE00;
+}
+
+.h1{
+    font-family: 'Karla';
+}
+.h2{
+    font-family: 'Karla';
+}
+
+border-bottom border-dark{
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #064789;
+    margin-bottom: 2rem;
+}
