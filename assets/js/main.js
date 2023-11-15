@@ -1,8 +1,13 @@
 /* javascript */
 
-// set value of name to be what user inputs for name section
-localStorage.setItem('name','Erika'); 
-let name = localStorage.getItem("name");
-console.log(name) //-> "Erika"
-var userName = document.getElementById("userName");
+//Retrieving Data from form
+let fname = document.querySelector("#fname").value;
+let lname = document.querySelector("#lname").value;
+console.log(fname);
+// let userAge = document.querySelector("#age").value;
+
+// store the data
+let userName = localStorage.setItem('fname',fname);
+//console.log(userName); //-> "Erika"
+
 
