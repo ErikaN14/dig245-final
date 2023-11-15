@@ -29,6 +29,12 @@ myForm.addEventListener("submit", (event) => {
     localStorage.setItem('userAge',userAge);
     let age = localStorage.getItem("userAge");
     console.log(age);
+
+    //Used to show fname value on webpage 
+    var firstName = document.getElementById('content-holder');
+    firstName.innerHTML = userFirstName; 
+
+
 });
 
 
