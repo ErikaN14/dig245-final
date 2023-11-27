@@ -2,8 +2,8 @@
 
 //Retrieving Data from form
 let fname = document.querySelector("#fname").value;
-let lname = document.querySelector("#lname").value;
-let userAge = document.querySelector("#age").value;
+// let lname = document.querySelector("#lname").value;
+// let userAge = document.querySelector("#age").value;
 
 
 //Defining the form being used
@@ -14,25 +14,28 @@ myForm.addEventListener("submit", (event) => {
 
     // create variables for all items
 	let fname = this.fname.value;
-	let lname = this.lname.value;
-    let userAge = this.age.value;
+	// let lname = this.lname.value;
+    // let userAge = this.age.value;
 
     localStorage.setItem('fname',fname);
-    let userFirstName = localStorage.getItem("fname");
-    console.log(userFirstName);
+    document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
+
+    // let userFirstName = localStorage.getItem("fname");
+    // console.log(userFirstName);
 
 
-    localStorage.setItem('lname',lname);
-    let userLastName = localStorage.getItem("lname");
-    console.log(userLastName);
 
-    localStorage.setItem('userAge',userAge);
-    let age = localStorage.getItem("userAge");
-    console.log(age);
+    // localStorage.setItem('lname',lname);
+    // let userLastName = localStorage.getItem("lname");
+    // console.log(userLastName);
+
+    // localStorage.setItem('userAge',userAge);
+    // let age = localStorage.getItem("userAge");
+    // console.log(age);
 
     //Used to show fname value on webpage 
-    var firstName = document.getElementById('content-holder');
-    firstName.innerHTML = userFirstName; 
+    // var firstName = document.getElementById('content-holder');
+    // firstName.innerHTML = userFirstName; 
 
 
 });
@@ -40,7 +43,7 @@ myForm.addEventListener("submit", (event) => {
 // // save primitive value
 // localStorage.setItem("_a", 123);
 
-// // example object 
+// // example object (use this example to set up tasks page) 
 // let tasks = [
 // 	{ name: "Replace plastic water bottle use with a reusable water bottle", status: false },
 // 	{ name: "Bike or walk instead of drive somewhere", status: true },

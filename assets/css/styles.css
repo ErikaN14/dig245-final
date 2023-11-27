@@ -1,19 +1,26 @@
 /* css */
 
 body{
-    background-color: #A5BE00;
+    background-color: #D1F2BB;
 }
 
-.h1{
+h1{
     font-family: 'Karla';
-}
-.h2{
-    font-family: 'Karla';
+    font-weight: bold;
+    font-size: 40px;
 }
 
-border-bottom border-dark{
-    border-bottom-width: 5px;
+p{
+    font-family: 'Karla';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.sky-border-bottom{
+    border-bottom-width: 4px;
     border-bottom-style: solid;
-    border-bottom-color: #064789;
-    margin-bottom: 2rem;
+    border-bottom-color: #0A5C36;
+    margin-top: 1rem;
 }
+
