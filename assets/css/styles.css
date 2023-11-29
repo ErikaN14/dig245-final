@@ -16,6 +16,10 @@ p{
     font-size: 20px;
 }
 
+label{
+    margin-bottom: 10rem;
+}
+
 
 .sky-border-bottom{
     border-bottom-width: 4px;
