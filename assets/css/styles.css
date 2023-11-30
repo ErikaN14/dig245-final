@@ -10,10 +10,16 @@ h1{
     font-size: 40px;
 }
 
+h2{
+    font-family: 'Karla';
+    font-weight: bold;
+    font-size: 40px;
+}
+
 p{
     font-family: 'Karla';
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 label{
@@ -27,4 +33,11 @@ label{
     border-bottom-color: #0A5C36;
     margin-top: 1rem;
 }
+
+.taskList{
+    font-family: 'Karla';
+    font-size: 30px;
+}
+
+
 

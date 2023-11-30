@@ -2,9 +2,6 @@
 
 //Retrieving Data from form
 let fname = document.querySelector("#fname").value;
-// let lname = document.querySelector("#lname").value;
-// let userAge = document.querySelector("#age").value;
-
 
 //Defining the form being used
 myForm.addEventListener("submit", (event) => {
@@ -14,56 +11,36 @@ myForm.addEventListener("submit", (event) => {
 
     // create variables for all items
 	let fname = this.fname.value;
-	// let lname = this.lname.value;
-    // let userAge = this.age.value;
 
-    localStorage.setItem('fname',fname);
-    document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
-
-    // let userFirstName = localStorage.getItem("fname");
-    // console.log(userFirstName);
-
-
-
-    // localStorage.setItem('lname',lname);
-    // let userLastName = localStorage.getItem("lname");
-    // console.log(userLastName);
-
-    // localStorage.setItem('userAge',userAge);
-    // let age = localStorage.getItem("userAge");
-    // console.log(age);
-
-    //Used to show fname value on webpage 
-    // var firstName = document.getElementById('content-holder');
-    // firstName.innerHTML = userFirstName; 
+    // document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
+    document.querySelector().innerHTML = str;
 
 
 });
 
-// // save primitive value
-// localStorage.setItem("_a", 123);
+// example object (use this example to set up tasks page) 
+let taskList = [
+	{ name: "Replace plastic water bottle use with a reusable water bottle", status: false },
+	{ name: "Bike or walk instead of drive somewhere", status: true },
+	{ name: "Recycle any material you use", status: false }
+];
+showTasks(".taskList", taskList);
 
-// // example object (use this example to set up tasks page) 
-// let tasks = [
-// 	{ name: "Replace plastic water bottle use with a reusable water bottle", status: false },
-// 	{ name: "Bike or walk instead of drive somewhere", status: true },
-// 	{ name: "Recycle any material you use", status: false }
-// ];
-// showTasks(tasks);
+// serialize and save an object 
+localStorage.setItem("_taskList", JSON.stringify(taskList));
+// get and deserialize the object
+let newTasks = JSON.parse(localStorage.getItem("_taskList"));
+showTasks(".newTasks", newTasks);
 
-// // serialize and save an object 
-// localStorage.setItem("_tasks", JSON.stringify(tasks));
-// // get and deserialize the object
-// let newTasks = JSON.parse(localStorage.getItem("_tasks"));
-// showTasks(newTasks);
+function showTasks(newTasks, data) {
+	let str = "";
+	for (let i = 0; i < taskList.length; i++) {
+		str += `<li>${data[i].name}</li>`;
+	}
+	document.querySelector(newTasks).innerHTML = str;
+}
 
-// function showTasks(data) {
-// 	let str = "";
-// 	for (let i = 0; i < tasks.length; i++) {
-// 		str += data[i].name + " - " + data[i].status + "<br>";
-// 	}
-// 	document.body.innerHTML += str;
-// }
+
 
 
 
