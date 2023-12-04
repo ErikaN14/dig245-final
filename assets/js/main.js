@@ -11,7 +11,7 @@ myForm.addEventListener("submit", (event) => {
 
     // create variables for all items
 	let fname = this.fname.value;
-
+	//Was displaying original name but now the name inputted by user no longer shows up
     document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
 });
 
