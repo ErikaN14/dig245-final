@@ -11,9 +11,11 @@ myForm.addEventListener("submit", (event) => {
 
     // create variables for all items
 	let fname = this.fname.value;
-	//Was displaying original name but now the name inputted by user no longer shows up
+	localStorage.setItem("fname", fname);
+
     document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
 });
+
 
 // example object (use this example to set up tasks page) 
 let taskList = [
