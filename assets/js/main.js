@@ -12,7 +12,6 @@ myForm.addEventListener("submit", (event) => {
     // create variables for all items
 	let fname = this.fname.value;
 	localStorage.setItem("fname", fname);
-
     document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
 });
 
