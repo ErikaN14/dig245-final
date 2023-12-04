@@ -12,10 +12,7 @@ myForm.addEventListener("submit", (event) => {
     // create variables for all items
 	let fname = this.fname.value;
 
-    // document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
-    document.querySelector().innerHTML = str;
-
-
+    document.querySelector(".fname").innerHTML = localStorage.getItem("fname");
 });
 
 // example object (use this example to set up tasks page) 
@@ -39,12 +36,3 @@ function showTasks(newTasks, data) {
 	}
 	document.querySelector(newTasks).innerHTML = str;
 }
-
-
-
-
-
-
-
-
-
