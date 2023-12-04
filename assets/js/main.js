@@ -45,7 +45,6 @@ function showTasks(newTasks, data) {
     str += `
 		<label class="container">${data[i].name}
 		<input type="checkbox" checked="checked" id="${data[i].id}">
-		<span class="checkmark"></span>
 	  	</label>
 		`;
   }

@@ -25,5 +25,20 @@ let taskListMaster = [
     status:false,
     id:5
   },
+  {
+    name: "Take reusable bags to use when going to any store",
+    status: false,
+    id:6
+  },
+  {
+    name: "Shop for clothes at a thrift shop",
+    status: false,
+    id: 7
+  },
+  {
+    name: ""
+  }
+
+
 
 ];
