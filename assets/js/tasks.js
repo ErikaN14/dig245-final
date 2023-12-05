@@ -35,10 +35,5 @@ let taskListMaster = [
     status: false,
     id: 7
   },
-  {
-    name: ""
-  }
-
-
 
 ];
