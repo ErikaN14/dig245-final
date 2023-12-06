@@ -35,5 +35,20 @@ let taskListMaster = [
     status: false,
     id: 7
   },
+  {
+    name: "Buy local produce",
+    status: false,
+    id: 8
+  },
+  {
+    name: "Carry your own utensils instead of using plastic ones",
+    status: false,
+    id: 9 
+  },
+  {
+    name: "Turn off the water when not in use",
+    status: false,
+    id: 10 
+  }
 
 ];
