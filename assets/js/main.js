@@ -20,19 +20,18 @@ let taskList = [
     name: "Replace plastic water bottle use with a reusable water bottle",
     status: false,
     id: 1,
-    value: 5
+    value: 5,
   },
   {
     name: "Bike or walk instead of drive somewhere",
-    status: true,
+    status: false,
     id: 2,
-    value: 5
+    value: 5,
   },
   { name: "Recycle any material you use", 
-  status: false, 
-  id: 3,
-  value: 5
-  },
+    status: false, 
+    id: 3, 
+    value: 5 },
 ];
 showTasks(".taskList", taskList);
 
@@ -43,14 +42,24 @@ let newTasks = JSON.parse(localStorage.getItem("_taskList"));
 showTasks(".newTasks", newTasks);
 
 function showTasks(newTasks, data) {
+  let score = 0;
   let str = "";
   for (let i = 0; i < taskList.length; i++) {
     //Check box code from W3 Schools
     str += `
-		<label class="container">${data[i].name}
-		<input type="checkbox" checked="checked" id="${data[i].id}">
-	  	</label>
+		<label class="container">
+    <input type="checkbox" id="${data[i].id}">
+    ${data[i].name}
+	  </label>
 		`;
+
+    //Conditional to check if the checkbox is checked (make status true and increase score if checked)
+    if(checkbox.checked == false){
+      data[i].status = true;
+      score += data[i].value;
+      console.log(data[i].id);
+
+    };
   }
   document.querySelector(newTasks).innerHTML = str;
 }
