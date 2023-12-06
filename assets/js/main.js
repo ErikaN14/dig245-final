@@ -31,7 +31,8 @@ let taskList = [
   { name: "Recycle any material you use", 
     status: false, 
     id: 3, 
-    value: 5 },
+    value: 5
+  }
 ];
 showTasks(".taskList", taskList);
 
@@ -48,13 +49,13 @@ function showTasks(newTasks, data) {
     //Check box code from W3 Schools
     str += `
 		<label class="container">
-    <input type="checkbox" id="${data[i].id}">
+    <input type="checkbox" checked = false id="${data[i].id}">
     ${data[i].name}
 	  </label>
 		`;
 
     //Conditional to check if the checkbox is checked (make status true and increase score if checked)
-    if(checkbox.checked == false){
+    if((data[i].status == false) && (checkbox.checked == checked)){
       data[i].status = true;
       score += data[i].value;
       console.log(data[i].id);
