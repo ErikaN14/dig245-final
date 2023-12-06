@@ -1,5 +1,10 @@
 /* javascript */
 
+// TO:DO:
+//   - Add a submit button for user to click after they type their name
+//   - Complete functions needed (focus on score function)
+
+
 //Retrieving Data from form
 let fname = document.querySelector("#fname").value;
 
