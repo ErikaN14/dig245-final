@@ -4,7 +4,6 @@
 //   - Add a submit button for user to click after they type their name
 //   - Complete functions needed (focus on score function)
 
-
 //Retrieving Data from form
 let fname = document.querySelector("#fname").value;
 
@@ -108,5 +107,10 @@ document.addEventListener("click", function (e) {
 
 let score = 0;
 function setScore(tasksCompleted) {
-  // for(let i=)
+//   for (let i = 0; i < taskListMaster.length; i++) {
+//     if (e.target.checked == true){
+//       score = score + Number(e.target.dataset.value);
+//       console.log(score);
+//     }
+//   }
 }

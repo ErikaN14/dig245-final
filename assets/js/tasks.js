@@ -1,7 +1,7 @@
 //Have an array that includes the id of the tasks already added in the taks list on the site
 let taskListMaster = [
   {
-    name: "Turn the lights off when you are not in the room.",
+    name: "First tasks.",
     status: false,
     id: 0,
     value: 5,
@@ -103,7 +103,7 @@ let taskListMaster = [
     value: 5,
   },
   {
-    name: "minimize the use of your dishwasher until it is full. If not applicable, wash dishes and turn off water as you scrub with soap.",
+    name: "Minimize the use of your dishwasher until it is full. If not applicable, wash dishes and turn off water as you scrub with soap.",
     status: false,
     id: 17,
     value: 5,
