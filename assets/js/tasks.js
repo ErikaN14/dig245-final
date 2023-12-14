@@ -1,7 +1,7 @@
 //Have an array that includes the id of the tasks already added in the taks list on the site
 let taskListMaster = [
   {
-    name: "Start using this website",
+    name: "Turn the lights off when you are not in the room.",
     status: false,
     id: 0,
     value: 5,
@@ -66,4 +66,64 @@ let taskListMaster = [
     id: 10,
     value: 5,
   },
+  {
+    name: "Avoid using single-use plates and use reusable plates or reusable containers.",
+    status: false,
+    id: 11,
+    value: 5,
+  },
+  {
+    name: "Use reusable straws instead of plastic ones.",
+    status: false,
+    id: 12,
+    value: 5,
+  },
+  {
+    name: "Replace paper towels for kitchen/tea towels.",
+    status: false,
+    id: 13,
+    value: 5,
+  },
+  {
+    name: "Start a vegetable garden.",
+    status: false,
+    id: 14,
+    value: 5,
+  },
+  {
+    name: "Ask for no receipt or a digital one when making a purchase.",
+    status: false,
+    id: 15,
+    value: 5,
+  },
+  {
+    name: "Plan your meals for the week in order to avoid buying and wasting food.",
+    status: false,
+    id: 16,
+    value: 5,
+  },
+  {
+    name: "minimize the use of your dishwasher until it is full. If not applicable, wash dishes and turn off water as you scrub with soap.",
+    status: false,
+    id: 17,
+    value: 5,
+  },
+  {
+    name: "Begin using a reusable coffee cup for your coffee, tea, etc...",
+    status: false,
+    id: 18,
+    value: 5,
+  },
+  {
+    name: "Use sustainable food wrapping like beeswax wrap instead of plastic cling wrap.",
+    status: false,
+    id: 19,
+    value: 5,
+  },
+  {
+    name: "If possible, shift any paper mail like bills and other documents to be digital.",
+    status: false,
+    id: 20,
+    value: 5,
+  }, 
 ];
