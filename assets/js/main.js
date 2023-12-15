@@ -1,9 +1,5 @@
 /* javascript */
 
-// TO:DO:
-//   - Add a submit button for user to click after they type their name
-//   - Complete functions needed (focus on score function)
-
 //Retrieving Data from form
 let fname = document.querySelector("#fname").value;
 
@@ -74,11 +70,7 @@ function showTasks() {
 
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("checkbox")) {
-    // console.log(e.target.classList.contains("checkbox"));
-    //   console.log("a checkbox was clicked");
     if (e.target.checked == true) {
-      //   console.log("a checkbox IS TRUE");
-
       // get the id
       let id = Number(e.target.dataset.id);
       console.log(taskListMaster[id]);
@@ -107,10 +99,10 @@ document.addEventListener("click", function (e) {
 
 let score = 0;
 function setScore(tasksCompleted) {
-//   for (let i = 0; i < taskListMaster.length; i++) {
-//     if (e.target.checked == true){
-//       score = score + Number(e.target.dataset.value);
-//       console.log(score);
-//     }
-//   }
+  //   for (let i = 0; i < taskListMaster.length; i++) {
+  //     if (e.target.checked == true){
+  //       score = score + Number(e.target.dataset.value);
+  //       console.log(score);
+  //     }
+  //   }
 }

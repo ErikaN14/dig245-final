@@ -1,7 +1,6 @@
-//Have an array that includes the id of the tasks already added in the taks list on the site
 let taskListMaster = [
   {
-    name: "First tasks.",
+    name: "Make profile.",
     status: false,
     id: 0,
     value: 5,
