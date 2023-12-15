@@ -26,6 +26,10 @@ label{
     margin-bottom: 10rem;
 }
 
+p.description{
+    font-size: 20px;
+}
+
 
 .sky-border-bottom{
     border-bottom-width: 4px;
